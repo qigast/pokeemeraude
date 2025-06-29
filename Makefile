@@ -1,13 +1,13 @@
 # GBA rom header
 TITLE       := POKEMON EMER
-GAME_CODE   := BPEE
+GAME_CODE   := BPEF
 MAKER_CODE  := 01
 REVISION    := 0
 MODERN      ?= 0
 KEEP_TEMPS  ?= 0
 
 # `File name`.gba ('_modern' will be appended to the modern builds)
-FILE_NAME := pokeemerald
+FILE_NAME := pokeemeraude
 BUILD_DIR := build
 
 # Builds the ROM using a modern compiler
@@ -121,7 +121,7 @@ ifeq ($(MODERN),0)
   LIBPATH := -L ../../tools/agbcc/lib
   LIB := $(LIBPATH) -lgcc -lc -L../../libagbsyscall -lagbsyscall
 else
-  # Note: The makefile must be set up to not call these if modern == 0
+# Note: The makefile must be set up to not call these if modern == 0
   MODERNCC := $(PREFIX)gcc
   PATH_MODERNCC := PATH="$(PATH)" $(MODERNCC)
   CC1 := $(shell $(PATH_MODERNCC) --print-prog-name=cc1) -quiet
@@ -242,7 +242,7 @@ clean-assets:
 	rm -f $(MID_SUBDIR)/*.s
 	rm -f $(DATA_ASM_SUBDIR)/layouts/layouts.inc $(DATA_ASM_SUBDIR)/layouts/layouts_table.inc
 	rm -f $(DATA_ASM_SUBDIR)/maps/connections.inc $(DATA_ASM_SUBDIR)/maps/events.inc $(DATA_ASM_SUBDIR)/maps/groups.inc $(DATA_ASM_SUBDIR)/maps/headers.inc
-	find sound -iname '*.bin' -exec rm {} +
+		find sound -iname '*.bin' -exec rm {} +
 	find . \( -iname '*.1bpp' -o -iname '*.4bpp' -o -iname '*.8bpp' -o -iname '*.gbapal' -o -iname '*.lz' -o -iname '*.rl' -o -iname '*.latfont' -o -iname '*.hwjpnfont' -o -iname '*.fwjpnfont' \) -exec rm {} +
 	find $(DATA_ASM_SUBDIR)/maps \( -iname 'connections.inc' -o -iname 'events.inc' -o -iname 'header.inc' \) -exec rm {} +
 
