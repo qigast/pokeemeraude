@@ -1,444 +1,445 @@
-const u8 gEasyChatWord_MatchUp[] = _("MATCH UP");
-const u8 gEasyChatWord_Go[] = _("GO");
-const u8 gEasyChatWord_No1[] = _("NO. 1");
-const u8 gEasyChatWord_Decide[] = _("DECIDE");
-const u8 gEasyChatWord_LetMeWin[] = _("LET ME WIN");
-const u8 gEasyChatWord_Wins[] = _("WINS");
-const u8 gEasyChatWord_Win[] = _("WIN");
-const u8 gEasyChatWord_Won[] = _("WON");
-const u8 gEasyChatWord_IfIWin[] = _("IF I WIN");
-const u8 gEasyChatWord_WhenIWin[] = _("WHEN I WIN");
-const u8 gEasyChatWord_CantWin[] = _("CAN'T WIN");
-const u8 gEasyChatWord_CanWin[] = _("CAN WIN");
-const u8 gEasyChatWord_NoMatch[] = _("NO MATCH");
-const u8 gEasyChatWord_Spirit[] = _("SPIRIT");
-const u8 gEasyChatWord_Decided[] = _("DECIDED");
-const u8 gEasyChatWord_TrumpCard[] = _("TRUMP CARD");
-const u8 gEasyChatWord_TakeThat[] = _("TAKE THAT");
-const u8 gEasyChatWord_ComeOn[] = _("COME ON");
-const u8 gEasyChatWord_Attack[] = _("ATTACK");
-const u8 gEasyChatWord_Surrender[] = _("SURRENDER");
-const u8 gEasyChatWord_Gutsy[] = _("GUTSY");
+const u8 gEasyChatWord_MatchUp[] = _("TECHNIQUE");
+const u8 gEasyChatWord_Go[] = _("ALLEZ");
+const u8 gEasyChatWord_No1[] = _("Nº 1");
+const u8 gEasyChatWord_Decide[] = _("DECIDER");
+const u8 gEasyChatWord_LetMeWin[] = _("TENACITE");
+const u8 gEasyChatWord_Wins[] = _("GAGNE");
+const u8 gEasyChatWord_Win[] = _("GAGNER");
+const u8 gEasyChatWord_Won[] = _("REUSSITE");
+const u8 gEasyChatWord_IfIWin[] = _("SI JE GAGNE");
+const u8 gEasyChatWord_WhenIWin[] = _("BATTRE");
+const u8 gEasyChatWord_CantWin[] = _("ECHEC");
+const u8 gEasyChatWord_CanWin[] = _("INTIMIDANT");
+const u8 gEasyChatWord_NoMatch[] = _("TROP NUL");
+const u8 gEasyChatWord_Spirit[] = _("ESPRIT");
+const u8 gEasyChatWord_Decided[] = _("DEMENAGER");
+const u8 gEasyChatWord_TrumpCard[] = _("AVANTAGE");
+const u8 gEasyChatWord_TakeThat[] = _("PRENDS CA!");
+const u8 gEasyChatWord_ComeOn[] = _("ASSURER");
+const u8 gEasyChatWord_Attack[] = _("ATTAQUER");
+const u8 gEasyChatWord_Surrender[] = _("SE RENDRE");
+const u8 gEasyChatWord_Gutsy[] = _("COURAGE");
 const u8 gEasyChatWord_Talent[] = _("TALENT");
-const u8 gEasyChatWord_Strategy[] = _("STRATEGY");
-const u8 gEasyChatWord_Smite[] = _("SMITE");
+const u8 gEasyChatWord_Strategy[] = _("STRATEGIE");
+const u8 gEasyChatWord_Smite[] = _("VIOLENCE");
 const u8 gEasyChatWord_Match[] = _("MATCH");
-const u8 gEasyChatWord_Victory[] = _("VICTORY");
-const u8 gEasyChatWord_Offensive[] = _("OFFENSIVE");
-const u8 gEasyChatWord_Sense[] = _("SENSE");
-const u8 gEasyChatWord_Versus[] = _("VERSUS");
-const u8 gEasyChatWord_Fights[] = _("FIGHTS");
-const u8 gEasyChatWord_Power[] = _("POWER");
-const u8 gEasyChatWord_Challenge[] = _("CHALLENGE");
-const u8 gEasyChatWord_Strong[] = _("STRONG");
-const u8 gEasyChatWord_TooStrong[] = _("TOO STRONG");
-const u8 gEasyChatWord_GoEasy[] = _("GO EASY");
-const u8 gEasyChatWord_Foe[] = _("FOE");
-const u8 gEasyChatWord_Genius[] = _("GENIUS");
-const u8 gEasyChatWord_Legend[] = _("LEGEND");
-const u8 gEasyChatWord_Escape[] = _("ESCAPE");
-const u8 gEasyChatWord_Aim[] = _("AIM");
-const u8 gEasyChatWord_Battle[] = _("BATTLE");
-const u8 gEasyChatWord_Fight[] = _("FIGHT");
-const u8 gEasyChatWord_Resuscitate[] = _("RESUSCITATE");
+const u8 gEasyChatWord_Victory[] = _("VICTOIRE");
+const u8 gEasyChatWord_Offensive[] = _("FUIR");
+const u8 gEasyChatWord_Sense[] = _("SENS");
+const u8 gEasyChatWord_Versus[] = _("CONTRE");
+const u8 gEasyChatWord_Fights[] = _("DISPUTE");
+const u8 gEasyChatWord_Power[] = _("PUISSANT");
+const u8 gEasyChatWord_Challenge[] = _("DEFI");
+const u8 gEasyChatWord_Strong[] = _("FORT");
+const u8 gEasyChatWord_TooStrong[] = _("TROP FORT");
+const u8 gEasyChatWord_GoEasy[] = _("TRANQUILLE");
+const u8 gEasyChatWord_Foe[] = _("ENNEMI");
+const u8 gEasyChatWord_Genius[] = _("GENIE");
+const u8 gEasyChatWord_Legend[] = _("LEGENDE");
+const u8 gEasyChatWord_Escape[] = _("ECHAPPER");
+const u8 gEasyChatWord_Aim[] = _("BUT");
+const u8 gEasyChatWord_Battle[] = _("LUTTE");
+const u8 gEasyChatWord_Fight[] = _("COMBATTRE");
+const u8 gEasyChatWord_Resuscitate[] = _("RESSUSCITER");
 const u8 gEasyChatWord_Points[] = _("POINTS");
-const u8 gEasyChatWord_Serious[] = _("SERIOUS");
-const u8 gEasyChatWord_GiveUp[] = _("GIVE UP");
-const u8 gEasyChatWord_Loss[] = _("LOSS");
-const u8 gEasyChatWord_IfILose[] = _("IF I LOSE");
-const u8 gEasyChatWord_Lost[] = _("LOST");
-const u8 gEasyChatWord_Lose[] = _("LOSE");
-const u8 gEasyChatWord_Guard[] = _("GUARD");
-const u8 gEasyChatWord_Partner[] = _("PARTNER");
-const u8 gEasyChatWord_Reject[] = _("REJECT");
-const u8 gEasyChatWord_Accept[] = _("ACCEPT");
+const u8 gEasyChatWord_Serious[] = _("SERIEUX");
+const u8 gEasyChatWord_GiveUp[] = _("ABANDONNER");
+const u8 gEasyChatWord_Loss[] = _("DEFAITE");
+const u8 gEasyChatWord_IfILose[] = _("SI JE PERDS");
+const u8 gEasyChatWord_Lost[] = _("PERDU");
+const u8 gEasyChatWord_Lose[] = _("PERDRE");
+const u8 gEasyChatWord_Guard[] = _("VIGILANCE");
+const u8 gEasyChatWord_Partner[] = _("PARTENAIRE");
+const u8 gEasyChatWord_Reject[] = _("REFUSER");
+const u8 gEasyChatWord_Accept[] = _("ACCEPTER");
 const u8 gEasyChatWord_Invincible[] = _("INVINCIBLE");
-const u8 gEasyChatWord_Received[] = _("RECEIVED");
-const u8 gEasyChatWord_Easy[] = _("EASY");
-const u8 gEasyChatWord_Weak[] = _("WEAK");
-const u8 gEasyChatWord_TooWeak[] = _("TOO WEAK");
-const u8 gEasyChatWord_Pushover[] = _("PUSHOVER");
+const u8 gEasyChatWord_Received[] = _("RECU");
+const u8 gEasyChatWord_Easy[] = _("FACILE");
+const u8 gEasyChatWord_Weak[] = _("FAIBLE");
+const u8 gEasyChatWord_TooWeak[] = _("TROP FAIBLE");
+const u8 gEasyChatWord_Pushover[] = _("NULLITE");
 const u8 gEasyChatWord_Leader[] = _("LEADER");
-const u8 gEasyChatWord_Rule[] = _("RULE");
-const u8 gEasyChatWord_Move[] = _("MOVE");
+const u8 gEasyChatWord_Rule[] = _("VIVE");
+const u8 gEasyChatWord_Move[] = _("CAPACITE");
+
 
 const struct EasyChatWordInfo gEasyChatGroup_Battle[] = {
     [EC_INDEX(EC_WORD_MATCH_UP)] =
     {
         .text = gEasyChatWord_MatchUp,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_ACCEPT),
+        .alphabeticalOrder = 45,
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_GO)] =
     {
         .text = gEasyChatWord_Go,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_AIM),
+        .alphabeticalOrder = 53,
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_NO_1)] =
     {
         .text = gEasyChatWord_No1,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_ATTACK),
+        .alphabeticalOrder = 1,
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_DECIDE)] =
     {
         .text = gEasyChatWord_Decide,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_BATTLE),
+        .alphabeticalOrder = 17,
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_LET_ME_WIN)] =
     {
         .text = gEasyChatWord_LetMeWin,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_CAN_WIN),
+        .alphabeticalOrder = 18,
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_WINS)] =
     {
         .text = gEasyChatWord_Wins,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_CAN_T_WIN),
+        .alphabeticalOrder = 15,
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_WIN)] =
     {
         .text = gEasyChatWord_Win,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_CHALLENGE),
+        .alphabeticalOrder = 9,
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_WON)] =
     {
         .text = gEasyChatWord_Won,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_COME_ON),
+        .alphabeticalOrder = 39,
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_IF_I_WIN)] =
     {
         .text = gEasyChatWord_IfIWin,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_DECIDE),
+        .alphabeticalOrder = 62,
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_WHEN_I_WIN)] =
     {
         .text = gEasyChatWord_WhenIWin,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_DECIDED),
+        .alphabeticalOrder = 41,
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_CAN_T_WIN)] =
     {
         .text = gEasyChatWord_CantWin,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_EASY),
+        .alphabeticalOrder = 28,
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_CAN_WIN)] =
     {
         .text = gEasyChatWord_CanWin,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_ESCAPE),
+        .alphabeticalOrder = 20,
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_NO_MATCH)] =
     {
         .text = gEasyChatWord_NoMatch,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_FIGHT),
+        .alphabeticalOrder = 3,
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_SPIRIT)] =
     {
         .text = gEasyChatWord_Spirit,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_FIGHTS),
+        .alphabeticalOrder = 46,
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_DECIDED)] =
     {
         .text = gEasyChatWord_Decided,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_FOE),
+        .alphabeticalOrder = 31,
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_TRUMP_CARD)] =
     {
         .text = gEasyChatWord_TrumpCard,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_GENIUS),
+        .alphabeticalOrder = 14,
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_TAKE_THAT)] =
     {
         .text = gEasyChatWord_TakeThat,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_GIVE_UP),
+        .alphabeticalOrder = 29,
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_COME_ON)] =
     {
         .text = gEasyChatWord_ComeOn,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_GO),
+        .alphabeticalOrder = 38,
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_ATTACK)] =
     {
         .text = gEasyChatWord_Attack,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_GO_EASY),
+        .alphabeticalOrder = 10,
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_SURRENDER)] =
     {
         .text = gEasyChatWord_Surrender,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_GUARD),
+        .alphabeticalOrder = 35,
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_GUTSY)] =
     {
         .text = gEasyChatWord_Gutsy,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_GUTSY),
+        .alphabeticalOrder = 13,
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_TALENT)] =
     {
         .text = gEasyChatWord_Talent,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_IF_I_LOSE),
+        .alphabeticalOrder = 56,
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_STRATEGY)] =
     {
         .text = gEasyChatWord_Strategy,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_IF_I_WIN),
+        .alphabeticalOrder = 57,
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_SMITE)] =
     {
         .text = gEasyChatWord_Smite,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_INVINCIBLE),
+        .alphabeticalOrder = 32,
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_MATCH)] =
     {
         .text = gEasyChatWord_Match,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_LEADER),
+        .alphabeticalOrder = 26,
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_VICTORY)] =
     {
         .text = gEasyChatWord_Victory,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_LEGEND),
+        .alphabeticalOrder = 5,
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_OFFENSIVE)] =
     {
         .text = gEasyChatWord_Offensive,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_LET_ME_WIN),
+        .alphabeticalOrder = 6,
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_SENSE)] =
     {
         .text = gEasyChatWord_Sense,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_LOSE),
+        .alphabeticalOrder = 36,
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_VERSUS)] =
     {
         .text = gEasyChatWord_Versus,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_LOSS),
+        .alphabeticalOrder = 11,
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_FIGHTS)] =
     {
         .text = gEasyChatWord_Fights,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_LOST),
+        .alphabeticalOrder = 54,
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_POWER)] =
     {
         .text = gEasyChatWord_Power,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_MATCH),
+        .alphabeticalOrder = 60,
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_CHALLENGE)] =
     {
         .text = gEasyChatWord_Challenge,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_MATCH_UP),
+        .alphabeticalOrder = 37,
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_STRONG)] =
     {
         .text = gEasyChatWord_Strong,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_MOVE),
+        .alphabeticalOrder = 40,
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_TOO_STRONG)] =
     {
         .text = gEasyChatWord_TooStrong,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_NO_MATCH),
+        .alphabeticalOrder = 24,
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_GO_EASY)] =
     {
         .text = gEasyChatWord_GoEasy,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_NO_1),
+        .alphabeticalOrder = 2,
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_FOE)] =
     {
         .text = gEasyChatWord_Foe,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_OFFENSIVE),
+        .alphabeticalOrder = 59,
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_GENIUS)] =
     {
         .text = gEasyChatWord_Genius,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_PARTNER),
+        .alphabeticalOrder = 51,
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_LEGEND)] =
     {
         .text = gEasyChatWord_Legend,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_POINTS),
+        .alphabeticalOrder = 49,
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_ESCAPE)] =
     {
         .text = gEasyChatWord_Escape,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_POWER),
+        .alphabeticalOrder = 48,
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_AIM)] =
     {
         .text = gEasyChatWord_Aim,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_PUSHOVER),
+        .alphabeticalOrder = 43,
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_BATTLE)] =
     {
         .text = gEasyChatWord_Battle,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_RECEIVED),
+        .alphabeticalOrder = 16,
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_FIGHT)] =
     {
         .text = gEasyChatWord_Fight,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_REJECT),
+        .alphabeticalOrder = 30,
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_RESUSCITATE)] =
     {
         .text = gEasyChatWord_Resuscitate,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_RESUSCITATE),
+        .alphabeticalOrder = 55,
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_POINTS)] =
     {
         .text = gEasyChatWord_Points,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_RULE),
+        .alphabeticalOrder = 52,
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_SERIOUS)] =
     {
         .text = gEasyChatWord_Serious,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_SENSE),
+        .alphabeticalOrder = 42,
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_GIVE_UP)] =
     {
         .text = gEasyChatWord_GiveUp,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_SERIOUS),
+        .alphabeticalOrder = 7,
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_LOSS)] =
     {
         .text = gEasyChatWord_Loss,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_SMITE),
+        .alphabeticalOrder = 19,
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_IF_I_LOSE)] =
     {
         .text = gEasyChatWord_IfILose,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_SPIRIT),
+        .alphabeticalOrder = 27,
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_LOST)] =
     {
         .text = gEasyChatWord_Lost,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_STRATEGY),
+        .alphabeticalOrder = 44,
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_LOSE)] =
     {
         .text = gEasyChatWord_Lose,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_STRONG),
+        .alphabeticalOrder = 8,
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_GUARD)] =
     {
         .text = gEasyChatWord_Guard,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_SURRENDER),
+        .alphabeticalOrder = 47,
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_PARTNER)] =
     {
         .text = gEasyChatWord_Partner,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_TAKE_THAT),
+        .alphabeticalOrder = 22,
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_REJECT)] =
     {
         .text = gEasyChatWord_Reject,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_TALENT),
+        .alphabeticalOrder = 21,
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_ACCEPT)] =
     {
         .text = gEasyChatWord_Accept,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_TOO_STRONG),
+        .alphabeticalOrder = 0,
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_INVINCIBLE)] =
     {
         .text = gEasyChatWord_Invincible,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_TOO_WEAK),
+        .alphabeticalOrder = 4,
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_RECEIVED)] =
     {
         .text = gEasyChatWord_Received,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_TRUMP_CARD),
+        .alphabeticalOrder = 34,
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_EASY)] =
     {
         .text = gEasyChatWord_Easy,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_VERSUS),
+        .alphabeticalOrder = 58,
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_WEAK)] =
     {
         .text = gEasyChatWord_Weak,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_VICTORY),
+        .alphabeticalOrder = 33,
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_TOO_WEAK)] =
     {
         .text = gEasyChatWord_TooWeak,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_WEAK),
+        .alphabeticalOrder = 12,
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_PUSHOVER)] =
     {
         .text = gEasyChatWord_Pushover,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_WHEN_I_WIN),
+        .alphabeticalOrder = 25,
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_LEADER)] =
     {
         .text = gEasyChatWord_Leader,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_WIN),
+        .alphabeticalOrder = 50,
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_RULE)] =
     {
         .text = gEasyChatWord_Rule,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_WINS),
+        .alphabeticalOrder = 23,
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_MOVE)] =
     {
         .text = gEasyChatWord_Move,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_WON),
+        .alphabeticalOrder = 61,
         .enabled = TRUE,
     },
 };
