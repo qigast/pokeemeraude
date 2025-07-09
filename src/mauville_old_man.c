@@ -38,12 +38,12 @@ static EWRAM_DATA struct MauvilleManStoryteller *sStorytellerPtr = NULL;
 static EWRAM_DATA u8 sStorytellerWindowId = 0;
 
 static const u16 sDefaultBardSongLyrics[NUM_BARD_SONG_WORDS] = {
-    EC_WORD_SHAKE,
-    EC_WORD_IT,
-    EC_WORD_DO,
-    EC_WORD_THE,
+    EC_WORD_FEELING,
     EC_WORD_DIET,
-    EC_WORD_DANCE
+    EC_WORD_IT_S,
+    EC_EMPTY_WORD,
+    EC_WORD_COOL,
+    EC_EMPTY_WORD
 };
 
 static const u8 *const sGiddyAdjectives[] = {
@@ -499,8 +499,10 @@ static void BardSing(struct Task *task, struct BardSong *song)
             song->lyrics[i] = lyrics[i];
 
         song->lyricsIndex = 0;
-        break;
     }
+        break;
+    case BARD_STATE_WAIT_BGM:
+        break;
     case BARD_STATE_GET_WORD:
     {
         u16 easyChatWord = song->lyrics[song->lyricsIndex];
@@ -592,11 +594,9 @@ static void BardSing(struct Task *task, struct BardSong *song)
             }
             break;
         }
-        break;
     }
+    break;
     case BARD_STATE_PAUSE:
-    case BARD_STATE_WAIT_BGM:
-        // Non-singing states.
         break;
     }
 }

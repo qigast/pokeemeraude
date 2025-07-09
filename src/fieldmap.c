@@ -144,7 +144,7 @@ static void InitBackupMapLayoutConnections(struct MapHeader *mapHeader)
         for (i = 0; i < count; i++, connection++)
         {
             struct MapHeader const *cMap = GetMapHeaderFromConnection(connection);
-            s32 offset = connection->offset;
+            u32 offset = connection->offset;
             switch (connection->direction)
             {
             case CONNECTION_SOUTH:

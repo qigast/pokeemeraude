@@ -8,6 +8,7 @@
 #include "link.h"
 #include "link_rfu.h"
 #include "party_menu.h"
+#include "pokemon.h"
 #include "recorded_battle.h"
 #include "task.h"
 #include "util.h"

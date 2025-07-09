@@ -13,6 +13,7 @@
 #include "event_data.h"
 #include "evolution_scene.h"
 #include "field_specials.h"
+#include "international_string_util.h"
 #include "item.h"
 #include "link.h"
 #include "main.h"
@@ -6222,11 +6223,8 @@ u32 CanMonLearnTMHM(struct Pokemon *mon, u8 tm)
     {
         return 0;
     }
-
-    // Fewer than 64 moves, use GF's method (for matching).
-    if (sizeof(struct TMHMLearnset) <= 8)
-    {
-        if (tm < 32)
+    //!< French Difference
+    else if (tm < 32)
         {
             u32 mask = 1 << tm;
             return gTMHMLearnsets[species].as_u32s[0] & mask;
@@ -6235,13 +6233,6 @@ u32 CanMonLearnTMHM(struct Pokemon *mon, u8 tm)
         {
             u32 mask = 1 << (tm - 32);
             return gTMHMLearnsets[species].as_u32s[1] & mask;
-        }
-    }
-    else
-    {
-        u32 index = tm / 32;
-        u32 mask = 1 << (tm % 32);
-        return gTMHMLearnsets[species].as_u32s[index] & mask;
     }
 }
 
@@ -6251,10 +6242,8 @@ u32 CanSpeciesLearnTMHM(u16 species, u8 tm)
     {
         return 0;
     }
-    // Fewer than 64 moves, use GF's method (for matching).
-    if (sizeof(struct TMHMLearnset) <= 8)
-    {
-        if (tm < 32)
+    //!< French Difference
+    else if (tm < 32)
         {
             u32 mask = 1 << tm;
             return gTMHMLearnsets[species].as_u32s[0] & mask;
@@ -6263,13 +6252,6 @@ u32 CanSpeciesLearnTMHM(u16 species, u8 tm)
         {
             u32 mask = 1 << (tm - 32);
             return gTMHMLearnsets[species].as_u32s[1] & mask;
-        }
-    }
-    else
-    {
-        u32 index = tm / 32;
-        u32 mask = 1 << (tm % 32);
-        return gTMHMLearnsets[species].as_u32s[index] & mask;
     }
 }
 
@@ -6944,11 +6926,14 @@ void HandleSetPokedexFlag(u16 nationalNum, u8 caseId, u32 personality)
     }
 }
 
+/**
+ * French Difference
+*/
 const u8 *GetTrainerClassNameFromId(u16 trainerId)
 {
     if (trainerId >= TRAINERS_COUNT)
         trainerId = TRAINER_NONE;
-    return gTrainerClassNames[gTrainers[trainerId].trainerClass];
+    return GetTrainerClassNameGenderSpecific(gTrainers[trainerId].trainerClass, gTrainers[trainerId].encounterMusic_gender, gTrainers[trainerId].trainerName);
 }
 
 const u8 *GetTrainerNameFromId(u16 trainerId)

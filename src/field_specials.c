@@ -2203,6 +2203,9 @@ void ShowFrontierManiacMessage(void)
 }
 
 // gSpecialVar_0x8005 and 0x8006 here are used by MoveElevator
+/**
+ * French Difference
+*/
 void BufferBattleTowerElevatorFloors(void)
 {
     static const u16 sBattleTowerStreakThresholds[] = {
@@ -2212,6 +2215,13 @@ void BufferBattleTowerElevatorFloors(void)
     u8 i;
     u16 battleMode = VarGet(VAR_FRONTIER_BATTLE_MODE);
     u8 lvlMode = gSaveBlock2Ptr->frontier.lvlMode;
+
+    if (battleMode == FRONTIER_MODE_LINK_MULTIS) // This check is absent in the English version.
+    {
+        gSpecialVar_0x8005 = 4;
+        gSpecialVar_0x8006 = 5;
+        return;
+    }
 
     if (battleMode == FRONTIER_MODE_MULTIS && !FlagGet(FLAG_CHOSEN_MULTI_BATTLE_NPC_PARTNER))
     {

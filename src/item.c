@@ -99,6 +99,11 @@ void CopyItemNameHandlePlural(u16 itemId, u8 *dst, u32 quantity)
     }
 }
 
+/**
+ * French Difference
+ * 
+ * The berry name and qualifier are swapped
+*/
 void GetBerryCountString(u8 *dst, const u8 *berryName, u32 quantity)
 {
     const u8 *berryString;
@@ -109,9 +114,9 @@ void GetBerryCountString(u8 *dst, const u8 *berryName, u32 quantity)
     else
         berryString = gText_Berries;
 
-    txtPtr = StringCopy(dst, berryName);
+    txtPtr = StringCopy(dst, berryString);
     *txtPtr = CHAR_SPACE;
-    StringCopy(txtPtr + 1, berryString);
+    StringCopy(txtPtr + 1, berryName);
 }
 
 bool8 IsBagPocketNonEmpty(u8 pocket)

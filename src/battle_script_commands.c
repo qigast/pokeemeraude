@@ -3401,10 +3401,13 @@ static void Cmd_getexp(void)
                     {
                         if (gBattlerPartyIndexes[2] == gBattleStruct->expGetterMonId && !(gAbsentBattlerFlags & gBitTable[2]))
                             gBattleStruct->expGetterBattlerId = 2;
-                        else if (!(gAbsentBattlerFlags & gBitTable[0]))
-                            gBattleStruct->expGetterBattlerId = 0;
                         else
-                            gBattleStruct->expGetterBattlerId = 2;
+                        {
+                            if (!(gAbsentBattlerFlags & gBitTable[0]))
+                                gBattleStruct->expGetterBattlerId = 0;
+                            else
+                                gBattleStruct->expGetterBattlerId = 2;
+                        }
                     }
                     else
                     {
@@ -10226,7 +10229,8 @@ void BattleCreateYesNoCursorAt(u8 cursorPosition)
     src[0] = 1;
     src[1] = 2;
 
-    CopyToBgTilemapBufferRect_ChangePalette(0, src, 0x19, 9 + (2 * cursorPosition), 1, 2, 0x11);
+    //!< French Difference
+    CopyToBgTilemapBufferRect_ChangePalette(0, src, 0x18, 9 + (2 * cursorPosition), 1, 2, 0x11);
     CopyBgTilemapBufferToVram(0);
 }
 
@@ -10236,7 +10240,8 @@ void BattleDestroyYesNoCursorAt(u8 cursorPosition)
     src[0] = 0x1016;
     src[1] = 0x1016;
 
-    CopyToBgTilemapBufferRect_ChangePalette(0, src, 0x19, 9 + (2 * cursorPosition), 1, 2, 0x11);
+    //!< French Difference
+    CopyToBgTilemapBufferRect_ChangePalette(0, src, 0x18, 9 + (2 * cursorPosition), 1, 2, 0x11);
     CopyBgTilemapBufferToVram(0);
 }
 

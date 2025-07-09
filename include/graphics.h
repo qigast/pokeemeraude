@@ -5101,7 +5101,7 @@ extern const u8 gCryMeter_Gfx[];
 extern const u16 gCryMeter_Pal[];
 
 // credits
-extern const u8 gCreditsCopyrightEnd_Gfx[];
+extern const u32 gCreditsCopyrightEnd_Gfx[];
 extern const u32 gCreditsCopyrightEnd_Tilemap[];
 
 // PokéNav match call gfx

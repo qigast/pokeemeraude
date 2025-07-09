@@ -1165,6 +1165,7 @@ void AnimTask_ShockWaveProgressingBolt(u8 taskId)
         task->data[4] = 7;
         task->data[5] = -1;
         task->data[11] = 12;
+        // If non-matching: task->data[11] - 76
         task->data[12] = BattleAnimAdjustPanning(SOUND_PAN_ATTACKER);
         task->data[13] = BattleAnimAdjustPanning(SOUND_PAN_TARGET);
         task->data[14] = task->data[12];
