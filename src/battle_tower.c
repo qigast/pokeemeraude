@@ -818,6 +818,7 @@ static void (*const sBattleTowerFuncs[])(void) =
     [BATTLE_TOWER_FUNC_TRY_CLOSE_LINK]      = TowerTryCloseLink,
     [BATTLE_TOWER_FUNC_SET_PARTNER_GFX]     = SetMultiPartnerGfx,
     [BATTLE_TOWER_FUNC_SET_INTERVIEW_DATA]  = SetTowerInterviewData,
+    [BATTLE_TOWER_FUNC_GET_OPPONENT_INTRO2] = GetOpponentIntroSpeech2,
 };
 
 static const u32 sWinStreakFlags[][2] =
