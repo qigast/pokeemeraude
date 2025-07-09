@@ -102,7 +102,7 @@ $(TILESETGFXDIR)/primary/building/tiles.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -num_tiles 502 -Wnum_tiles
 
 $(TILESETGFXDIR)/secondary/shop/tiles.4bpp: %.4bpp: %.png
-	$(GFX) $< $@ -num_tiles 502 -Wnum_tiles
+	$(GFX) $< $@ -num_tiles 502
 
 $(TILESETGFXDIR)/secondary/pokemon_center/tiles.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -num_tiles 478 -Wnum_tiles
@@ -299,12 +299,8 @@ $(FONTGFXDIR)/frlg_female.fwjpnfont: $(FONTGFXDIR)/japanese_frlg_female.png
 
 
 ### Miscellaneous ###
-
 $(TITLESCREENGFXDIR)/pokemon_logo.gbapal: %.gbapal: %.pal
 	$(GFX) $< $@ -num_colors 224
-
-$(TITLESCREENGFXDIR)/emerald_version.8bpp: %.8bpp: %.png
-	$(GFX) $< $@ -mwidth 8 -mheight 4
 
 graphics/pokemon_jump/bg.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -num_tiles 63 -Wnum_tiles
@@ -314,9 +310,6 @@ graphics/pokenav/region_map/map.8bpp: %.8bpp: %.png
 
 $(MISCGFXDIR)/japanese_hof.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -num_tiles 29 -Wnum_tiles
-
-$(MISCGFXDIR)/mirage_tower.4bpp: %.4bpp: %.png
-	$(GFX) $< $@ -num_tiles 73 -Wnum_tiles
 
 $(BATINTGFXDIR)/textbox.gbapal: $(BATINTGFXDIR)/textbox_0.gbapal \
                                 $(BATINTGFXDIR)/textbox_1.gbapal
@@ -453,10 +446,10 @@ $(ROULETTEGFXDIR)/wheel_icons.4bpp: $(ROULETTEGFXDIR)/wynaut.4bpp \
 	@cat $^ >$@
 
 $(BATTRANSGFXDIR)/regis.4bpp: %.4bpp: %.png
-	$(GFX) $< $@ -num_tiles 53 -Wnum_tiles
+	$(GFX) $< $@ -num_tiles 53
 
 $(BATTRANSGFXDIR)/rayquaza.4bpp: %.4bpp: %.png
-	$(GFX) $< $@ -num_tiles 938 -Wnum_tiles
+	$(GFX) $< $@ -num_tiles 938
 
 $(BATTRANSGFXDIR)/frontier_square_1.4bpp: $(BATTRANSGFXDIR)/frontier_squares_blanktiles.4bpp \
                                           $(BATTRANSGFXDIR)/frontier_squares_1.4bpp
@@ -642,7 +635,7 @@ $(WALLPAPERGFXDIR)/whiscash/tiles.4bpp: $(WALLPAPERGFXDIR)/friends_frame2.4bpp $
 	@cat $^ >$@
 
 $(INTERFACEGFXDIR)/outline_cursor.4bpp: %.4bpp: %.png
-	$(GFX) $< $@ -num_tiles 8 -Wnum_tiles
+	$(GFX) $< $@ -num_tiles 8
 
 $(BATTRANSGFXDIR)/frontier_logo_center.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -num_tiles 43 -Wnum_tiles
@@ -681,14 +674,6 @@ $(POKEDEXGFXDIR)/region_map.8bpp: %.8bpp: %.png
 $(POKEDEXGFXDIR)/region_map_affine.8bpp: %.8bpp: %.png
 	$(GFX) $< $@ -num_tiles 233 -Wnum_tiles
 
-$(NAMINGGFXDIR)/cursor.4bpp: %.4bpp: %.png
-	$(GFX) $< $@ -num_tiles 5 -Wnum_tiles
-
-$(NAMINGGFXDIR)/cursor_squished.4bpp: %.4bpp: %.png
-	$(GFX) $< $@ -num_tiles 5 -Wnum_tiles
-
-$(NAMINGGFXDIR)/cursor_filled.4bpp: %.4bpp: %.png
-	$(GFX) $< $@ -num_tiles 5 -Wnum_tiles
 
 $(SPINDAGFXDIR)/spot_0.1bpp: %.1bpp: %.png
 	$(GFX) $< $@ -plain -data_width 2
