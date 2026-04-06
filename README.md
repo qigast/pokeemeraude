@@ -5,7 +5,7 @@ The original decompilation of the Pokémon - Version Émeraude was done by Dizzy
 
 It builds the following ROM:
 
-* [**pokeemeraude.gba**](https://datomatic.no-intro.org/index.php?page=show_record&s=23&n=1961) `sha1: ca666651374d89ca439007bed54d839eb7bd14d0`
+* [**pokeemeraude.gba**](https://datomatic.no-intro.org/index.php?page=show_record&s=23&n=2161) `sha1: ca666651374d89ca439007bed54d839eb7bd14d0`
 
 To set up the repository, see [INSTALL.md](INSTALL.md).
 
