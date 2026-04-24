@@ -416,9 +416,9 @@ static void SetBallStuck(struct Sprite *);
 static void SpriteCB_Shroomish(struct Sprite *);
 static void SpriteCB_Taillow(struct Sprite *);
 
-static const u16 sWheel_Pal[] = INCBIN_U16("graphics/roulette/wheel.gbapal"); // also palette for grid
-static const u32 sGrid_Tilemap[] = INCBIN_U32("graphics/roulette/grid.bin.lz");
-static const u32 sWheel_Tilemap[] = INCBIN_U32("graphics/roulette/wheel.bin.lz");
+static const u16 sWheel_Pal[] = INCGFX_U16("graphics/roulette/wheel.png", ".gbapal"); // also palette for grid
+static const u32 sGrid_Tilemap[] = INCGFX_U32("graphics/roulette/grid.bin", ".lz");
+static const u32 sWheel_Tilemap[] = INCGFX_U32("graphics/roulette/wheel.bin", ".lz");
 static const struct BgTemplate sBgTemplates[] =
 {
     // Text box
@@ -2323,13 +2323,13 @@ static void UpdateWheelPosition(void)
 }
 
 static const u8 sFiller[3] = {};
-static const u32 sBall_Gfx[] = INCBIN_U32("graphics/roulette/ball.4bpp.lz");
-static const u32 sBallCounter_Gfx[] = INCBIN_U32("graphics/roulette/ball_counter.4bpp.lz");
-static const u32 sShroomishTaillow_Gfx[] = INCBIN_U32("graphics/roulette/roulette_tilt.4bpp.lz");
-static const u32 sGridIcons_Gfx[] = INCBIN_U32("graphics/roulette/grid_icons.4bpp.lz");
-static const u32 sWheelIcons_Gfx[] = INCBIN_U32("graphics/roulette/wheel_icons.4bpp.lz");
-static const u32 sShadow_Gfx[] = INCBIN_U32("graphics/roulette/shadow.4bpp.lz");
-static const u32 sCursor_Gfx[] = INCBIN_U32("graphics/roulette/cursor.4bpp.lz");
+static const u32 sBall_Gfx[] = INCGFX_U32("graphics/roulette/ball.png", ".4bpp.lz");
+static const u32 sBallCounter_Gfx[] = INCGFX_U32("graphics/roulette/ball_counter.png", ".4bpp.lz");
+static const u32 sShroomishTaillow_Gfx[] = INCGFX_U32("graphics/roulette/roulette_tilt.4bpp", ".lz");
+static const u32 sGridIcons_Gfx[] = INCGFX_U32("graphics/roulette/grid_icons.png", ".4bpp.lz");
+static const u32 sWheelIcons_Gfx[] = INCGFX_U32("graphics/roulette/wheel_icons.4bpp", ".lz");
+static const u32 sShadow_Gfx[] = INCGFX_U32("graphics/roulette/shadow.png", ".4bpp.lz");
+static const u32 sCursor_Gfx[] = INCGFX_U32("graphics/roulette/cursor.png", ".4bpp.lz");
 
 static const struct SpritePalette sSpritePalettes[] =
 {

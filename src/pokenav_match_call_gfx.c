@@ -115,13 +115,12 @@ static u32 ShowCheckPageDown(s32);
 static u32 ExitCheckPage(s32);
 static u32 ExitMatchCall(s32);
 
-//!< French Difference
-static const u16 sOptionsCursor_Pal[] = INCBIN_U16("graphics/pokenav/match_call/options_cursor.gbapal");
-static const u32 sOptionsCursor_Gfx[] = INCBIN_U32("graphics/pokenav/match_call/options_cursor.4bpp.lz");
-static const u16 sCallWindow_Pal[] = INCBIN_U16("graphics/pokenav/match_call/call_window.gbapal");
-static const u16 sListWindow_Pal[] = INCBIN_U16("graphics/pokenav/match_call/list_window.gbapal");
-static const u16 sPokeball_Pal[] = INCBIN_U16("graphics/pokenav/match_call/pokeball.gbapal");
-static const u32 sPokeball_Gfx[] = INCBIN_U32("graphics/pokenav/match_call/pokeball.4bpp.lz");
+static const u16 sOptionsCursor_Pal[] = INCGFX_U16("graphics/pokenav/match_call/options_cursor.png", ".gbapal");
+static const u32 sOptionsCursor_Gfx[] = INCGFX_U32("graphics/pokenav/match_call/options_cursor.png", ".4bpp.lz");
+static const u16 sCallWindow_Pal[] = INCGFX_U16("graphics/pokenav/match_call/call_window.pal", ".gbapal");
+static const u16 sListWindow_Pal[] = INCGFX_U16("graphics/pokenav/match_call/list_window.pal", ".gbapal");
+static const u16 sPokeball_Pal[] = INCGFX_U16("graphics/pokenav/match_call/pokeball.pal", ".gbapal");
+static const u32 sPokeball_Gfx[] = INCGFX_U32("graphics/pokenav/match_call/pokeball.png", ".4bpp.lz");
 
 static const struct BgTemplate sMatchCallBgTemplates[3] =
 {

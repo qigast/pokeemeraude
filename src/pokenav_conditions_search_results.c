@@ -78,8 +78,7 @@ static const LoopedTask sConditionSearchLoopedTaskFuncs[] =
     ConvertConditionsToListRanks
 };
 
-//!< French Difference
-static const u16 sListBg_Pal[] = INCBIN_U16("graphics/pokenav/condition/search_results_list.gbapal");
+static const u16 sListBg_Pal[] = INCGFX_U16("graphics/pokenav/condition/search_results_list.pal", ".gbapal");
 
 static const struct BgTemplate sConditionSearchResultBgTemplates[] =
 {

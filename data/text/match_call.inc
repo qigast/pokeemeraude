@@ -2075,7 +2075,7 @@ MatchCall_Text_Mom3::
 	.string "Use bien les semelles de tes\n"
 	.string "CHAUSSURES DE SPORT!$"
 
-MatchCall_Text_Roxanne1::
+MatchCall_Text_Roxanne_Preparing::
 	.string "ROXANNE: Bonjour, {PLAYER}!\p"
 	.string "Je suis en train de me remettre\n"
 	.string "à niveau.\p"
@@ -2084,7 +2084,7 @@ MatchCall_Text_Roxanne1::
 	.string "Mais dès que l'ARENE sera prête,\n"
 	.string "passe faire un combat!$"
 
-MatchCall_Text_Roxanne2::
+MatchCall_Text_Roxanne_PreparingPostGame::
 	.string "ROXANNE: C'est toi, {PLAYER}?\n"
 	.string "Félicitations!\l"
 	.string "J'ai entendu parler de toi!\p"
@@ -2093,18 +2093,18 @@ MatchCall_Text_Roxanne2::
 	.string "Mais dès que l'ARENE sera prête,\n"
 	.string "passe faire un combat!$"
 
-MatchCall_Text_Roxanne3::
+MatchCall_Text_Roxanne_RematchReady::
 	.string "ROXANNE: {PLAYER}!\n"
 	.string "L'ARENE est prête!\p"
 	.string "J'espère que tu vas bientôt venir\n"
 	.string "à MEROUVILLE!$"
 
-MatchCall_Text_Roxanne4::
+MatchCall_Text_Roxanne_PostRematch::
 	.string "ROXANNE: M'être battue contre toi\n"
 	.string "dans l'ARENE de MEROUVILLE me\l"
 	.string "remplit de fierté, {PLAYER}.$"
 
-MatchCall_Text_Brawly1::
+MatchCall_Text_Brawly_Preparing::
 	.string "BASTIEN: Salut, {PLAYER}{KUN}!\p"
 	.string "Notre combat m'a beaucoup appris.\p"
 	.string "Je vais suivre un entraînement\n"
@@ -2114,7 +2114,7 @@ MatchCall_Text_Brawly1::
 	.string "Quand tout sera prêt, j'espère que\n"
 	.string "tu passeras refaire un combat.$"
 
-MatchCall_Text_Brawly2::
+MatchCall_Text_Brawly_PreparingPostGame::
 	.string "BASTIEN: Salut, {PLAYER}{KUN}!\n"
 	.string "Bravo!\p"
 	.string "La nouvelle s'est répandue comme\n"
@@ -2126,16 +2126,16 @@ MatchCall_Text_Brawly2::
 	.string "Quand tout sera prêt, j'espère que\n"
 	.string "tu passeras refaire un combat.$"
 
-MatchCall_Text_Brawly3::
+MatchCall_Text_Brawly_RematchReady::
 	.string "BASTIEN: Salut, {PLAYER}{KUN}!\n"
 	.string "Je suis prêt à rouvrir l'ARENE!\p"
 	.string "Reviens à MYOKARA quand tu veux!$"
 
-MatchCall_Text_Brawly4::
+MatchCall_Text_Brawly_PostRematch::
 	.string "BASTIEN: {PLAYER}{KUN}, je ne me lasserai\n"
 	.string "jamais de me battre contre toi!$"
 
-MatchCall_Text_Wattson1::
+MatchCall_Text_Wattson_Preparing::
 	.string "VOLTERE: Oh, c'est toi!\p"
 	.string "Après notre combat, j'ai repris\n"
 	.string "l'entraînement depuis le début.\p"
@@ -2144,7 +2144,7 @@ MatchCall_Text_Wattson1::
 	.string "Tu vas devoir attendre avant de\n"
 	.string "m'affronter à nouveau. Wahahaha!$"
 
-MatchCall_Text_Wattson2::
+MatchCall_Text_Wattson_PreparingPostGame::
 	.string "VOLTERE: Wahahaha!\p"
 	.string "Tu as réussi, n'est-ce pas? La\n"
 	.string "nouvelle est arrivée jusqu'à moi!\p"
@@ -2155,18 +2155,18 @@ MatchCall_Text_Wattson2::
 	.string "Tu vas devoir attendre avant de\n"
 	.string "m'affronter à nouveau. Wahahaha!$"
 
-MatchCall_Text_Wattson3::
+MatchCall_Text_Wattson_RematchReady::
 	.string "VOLTERE: Oh, c'est toi!\n"
 	.string "L'ARENE est prête!\p"
 	.string "Viens à LAVANDIA quand tu veux!\n"
 	.string "Waaaaaouh!$"
 
-MatchCall_Text_Wattson4::
+MatchCall_Text_Wattson_PostRematch::
 	.string "VOLTERE: Wahahahaha!\p"
 	.string "Ton énergie me fait toujours\n"
 	.string "du bien!$"
 
-MatchCall_Text_Flannery1::
+MatchCall_Text_Flannery_Preparing::
 	.string "ADRIANE: {PLAYER}…\p"
 	.string "Après notre combat, j'ai réalisé\n"
 	.string "que je manquais d'expérience.\p"
@@ -2177,7 +2177,7 @@ MatchCall_Text_Flannery1::
 	.string "Quand le moment sera venu,\n"
 	.string "nous nous battrons, {PLAYER}.$"
 
-MatchCall_Text_Flannery2::
+MatchCall_Text_Flannery_PreparingPostGame::
 	.string "ADRIANE: Salut, {PLAYER}?\n"
 	.string "Félicitations!\p"
 	.string "La nouvelle de ta réussite m'a\n"
@@ -2188,46 +2188,46 @@ MatchCall_Text_Flannery2::
 	.string "marque apparaîtra près de mon\l"
 	.string "nom dans la liste du MATCH PHONE.$"
 
-MatchCall_Text_Flannery3::
+MatchCall_Text_Flannery_RematchReady::
 	.string "ADRIANE: Oh, {PLAYER}?\n"
 	.string "L'ARENE est prête!\p"
 	.string "Viens à VERMILAVA! On a des\n"
 	.string "sources chaudes et j'aimerais\l"
 	.string "me battre de nouveau contre toi!$"
 
-MatchCall_Text_Flannery4::
+MatchCall_Text_Flannery_PostRematch::
 	.string "ADRIANE: {PLAYER}…\n"
 	.string "Je vois que tu ne cesses de\l"
 	.string "progresser.$"
 
-MatchCall_Text_Winona1::
+MatchCall_Text_Winona_Preparing::
 	.string "ALIZEE: Bonjour, {PLAYER}!\p"
 	.string "Notre combat m'a permis de\n"
 	.string "comprendre mes points faibles!\p"
 	.string "Quand je rouvrirai l'ARENE,\n"
 	.string "j'aurai beaucoup progressé!$"
 
-MatchCall_Text_Winona2::
+MatchCall_Text_Winona_PreparingPostGame::
 	.string "ALIZEE: Bravo, {PLAYER}!\p"
 	.string "Tout le monde à CIMETRONELLE\n"
 	.string "sait qui est le nouveau MAITRE!\p"
 	.string "Mais… l'issue de notre prochain\n"
 	.string "combat sera différente, crois-moi.$"
 
-MatchCall_Text_Winona3::
+MatchCall_Text_Winona_RematchReady::
 	.string "ALIZEE: C'est toi, {PLAYER}?\n"
 	.string "J'ai rouvert l'ARENE!\p"
 	.string "On t'attend tous à\n"
 	.string "CIMETRONELLE!$"
 
-MatchCall_Text_Winona4::
+MatchCall_Text_Winona_PostRematch::
 	.string "ALIZEE: {PLAYER}…\n"
 	.string "J'ai perdu, mais cette défaite ne\l"
 	.string "va pas m'ébranler.\p"
 	.string "Tu peux comprendre, car toi aussi\n"
 	.string "tu vis pour tes rêves.$"
 
-MatchCall_Text_TateLiza1::
+MatchCall_Text_TateLiza_Preparing::
 	.string "LEVY: Oh! C'est…\n"
 	.string "TATIA: {PLAYER}!\p"
 	.string "LEVY: On a repris l'entraînement…\n"
@@ -2237,7 +2237,7 @@ MatchCall_Text_TateLiza1::
 	.string "LEVY: près de nos noms dans…\n"
 	.string "TATIA: la liste du MATCH PHONE.$"
 
-MatchCall_Text_TateLiza2::
+MatchCall_Text_TateLiza_PreparingPostGame::
 	.string "LEVY: Félicitations, {PLAYER}!\n"
 	.string "TATIA: Félicitations, {PLAYER}!\p"
 	.string "LEVY: Nous, on s'entraîne…\n"
@@ -2247,7 +2247,7 @@ MatchCall_Text_TateLiza2::
 	.string "LEVY: près de nos noms dans…\n"
 	.string "TATIA: la liste du MATCH PHONE.$"
 
-MatchCall_Text_TateLiza3::
+MatchCall_Text_TateLiza_RematchReady::
 	.string "LEVY: {PLAYER}!\n"
 	.string "TATIA: {PLAYER}!\p"
 	.string "LEVY: L'ARENE est prête!\n"
@@ -2255,13 +2255,13 @@ MatchCall_Text_TateLiza3::
 	.string "LEVY: Passe nous voir…\n"
 	.string "TATIA: à ALGATIA!$"
 
-MatchCall_Text_TateLiza4::
+MatchCall_Text_TateLiza_PostRematch::
 	.string "LEVY: {PLAYER}, notre combat…\n"
 	.string "TATIA: a été une expérience unique.\p"
 	.string "LEVY: Ce serait bien si on faisait…\n"
 	.string "TATIA: un autre combat bientôt!$"
 
-MatchCall_Text_Juan1::
+MatchCall_Text_Juan_Preparing::
 	.string "JUAN: Hum…\n"
 	.string "{PLAYER}{KUN}… C'est ça?\p"
 	.string "Notre combat m'a rappelé la\n"
@@ -2269,7 +2269,7 @@ MatchCall_Text_Juan1::
 	.string "Peut-être arriverez-vous à\n"
 	.string "surpasser MARC? Qui sait!?!$"
 
-MatchCall_Text_Juan2::
+MatchCall_Text_Juan_PreparingPostGame::
 	.string "JUAN: Dites donc… {PLAYER}{KUN}…\n"
 	.string "Vous avez atteint votre objectif!\p"
 	.string "Vous voyez, j'ai l'œil pour\n"
@@ -2278,14 +2278,14 @@ MatchCall_Text_Juan2::
 	.string "sommet de la gloire. J'espère vous\l"
 	.string "revoir bientôt!$"
 
-MatchCall_Text_Juan3::
+MatchCall_Text_Juan_RematchReady::
 	.string "JUAN: Ho, ho… {PLAYER}{KUN}…\p"
 	.string "L'ARENE d'ATALANOPOLIS a enfin\n"
 	.string "rouvert.\p"
 	.string "Si vous voulez me voir, vous pouvez\n"
 	.string "passer quand vous voulez.$"
 
-MatchCall_Text_Juan4::
+MatchCall_Text_Juan_PostRematch::
 	.string "JUAN: {PLAYER}{KUN}…\p"
 	.string "Quand je me bats contre vous, c'est\n"
 	.string "comme si une musique\l"
@@ -2784,20 +2784,20 @@ MatchCall_Text_Norman5::
 	.string "Mais vu le nom, ça doit avoir un\n"
 	.string "rapport avec un volcan!$"
 
-MatchCall_Text_Norman6::
+MatchCall_Text_Norman_Preparing::
 	.string "PAPA: Allez! C'est ça!\p"
 	.string "Oh? {PLAYER}!\p"
 	.string "Je suis en pleine séance\n"
 	.string "d'entraînement avec mes POKéMON!$"
 
-MatchCall_Text_Norman7::
+MatchCall_Text_Norman_PreparingPostGame::
 	.string "PAPA: {PLAYER}!\p"
 	.string "Si j'avais su que tu deviendrais le\n"
 	.string "MAITRE de la LIGUE POKéMON…\p"
 	.string "Bien! Je dois réagir!\n"
 	.string "Je ne vais pas me laisser faire!$"
 
-MatchCall_Text_Norman8::
+MatchCall_Text_Norman_RematchReady::
 	.string "PAPA: Hum? {PLAYER}?\n"
 	.string "Tu appelles au bon moment!\p"
 	.string "Je t'invite à venir faire un combat\n"
@@ -2805,7 +2805,7 @@ MatchCall_Text_Norman8::
 	.string "Je suis dans l'ARENE de\n"
 	.string "CLEMENTI-VILLE.$"
 
-MatchCall_Text_Norman9::
+MatchCall_Text_Norman_PostRematch::
 	.string "PAPA: Tu m'épates, {PLAYER}.\n"
 	.string "Mais jusqu'où iras-tu?$"
 

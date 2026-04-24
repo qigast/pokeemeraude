@@ -249,9 +249,9 @@ static s16 sDebug_GameTimeStage;
 COMMON_DATA u8 gInGameOpponentsNo = 0;
 
 static const u8 sBlenderCenter_Tilemap[] = INCBIN_U8("graphics/berry_blender/center_map.bin");
-static const u16 sBlenderOuter_Pal[] = INCBIN_U16("graphics/berry_blender/outer.gbapal");
+static const u16 sBlenderOuter_Pal[] = INCGFX_U16("graphics/berry_blender/outer.png", ".gbapal");
 
-static const u16 sUnused_Pal[] = INCBIN_U16("graphics/berry_blender/unused.gbapal");
+static const u16 sUnused_Pal[] = INCGFX_U16("graphics/berry_blender/unused.pal", ".gbapal");
 static const u16 sEmpty_Pal[16 * 14] = {0};
 
 // unused text

@@ -73,8 +73,7 @@ static const LoopedTask sMonRibbonListLoopTaskFuncs[] =
     BuildBoxMonRibbonList
 };
 
-//!< French Difference
-static const u16 sMonRibbonListUi_Pal[] = INCBIN_U16("graphics/pokenav/ribbons/list_ui.gbapal");
+static const u16 sMonRibbonListUi_Pal[] = INCGFX_U16("graphics/pokenav/ribbons/list_ui.pal", ".gbapal");
 
 static const struct BgTemplate sMonRibbonListBgTemplates[] =
 {
