@@ -456,7 +456,7 @@ static const union AnimCmd sSpriteAnim_MenuText[] =
 };
 
 //!< French Difference
-static const union AnimCmd sSpriteAnim_Unused[] =
+static const union AnimCmd sSpriteAnim_SelectButton2[] =
 {
     ANIMCMD_FRAME(200, 30),
     ANIMCMD_END
@@ -632,13 +632,8 @@ static const union AnimCmd *const sSpriteAnimTable_InterfaceText[] =
     sSpriteAnim_StartButton,
     sSpriteAnim_SearchText,
     sSpriteAnim_SelectButton,
-    sSpriteAnim_MenuText
-};
-
-//!< French Difference
-static const union AnimCmd *const sSpriteAnimTable_Unused[] =
-{
-    sSpriteAnim_Unused
+    sSpriteAnim_MenuText,
+    sSpriteAnim_SelectButton2, //!< French Difference
 };
 
 static const union AnimCmd *const sSpriteAnimTable_SeenOwnText[] =
